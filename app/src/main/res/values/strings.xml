@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Marks MIS</string>
+    <string name="search_marks">Search Marks</string>
+    <string name="nameHolder">Names:</string>
+    <string name="regnoLabel">Reg Number:</string>
+    <string name="genderLabel">Gender:</string>
+    <string name="averageLabel">Average</string>
+
+</resources>

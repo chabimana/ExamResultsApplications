@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/studentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Student Information"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif-condensed" />
+
+    <TableLayout
+        android:id="@+id/linearLayout"
+        android:layout_below="@id/studentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <TableRow>
+
+            <TextView
+                android:id="@+id/namesLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".40"
+                android:text="@string/nameHolder"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".60"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".40"
+                android:text="@string/regnoLabel"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewRegNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".60"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".40"
+                android:text="@string/genderLabel"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".60"
+                android:textSize="18sp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".40"
+                android:text="@string/averageLabel"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textViewAverage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight=".60"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/courseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:text="Taken Courses"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:fontFamily="sans-serif-condensed" />
+    <ListView
+        android:id="@+id/listViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTitle"
+        android:divider="#000FFF" />
+
+</RelativeLayout>
